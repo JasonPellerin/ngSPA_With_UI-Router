@@ -1,0 +1,51 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-12 flame">
+
+
+            <svg viewBox="0 0 600 300">
+
+                <!-- Pattern -->
+                <pattern
+                        id="p-fire"
+                        viewBox="30 100 186 200"
+                        patternUnits="userSpaceOnUse"
+                        width="216" height="200"
+                        x="-70" y="35">
+
+                    <!-- Fire -->
+                    <image xlink:href="http://tympanus.net/codrops-playground/assets/images/posts/23145/fire.gif" width="256" height="300"/>
+                </pattern>
+
+                <!-- Text -->
+                <text text-anchor="middle"
+                      x="50%"
+                      y="50%"
+                      dy=".35em"
+                      class="text"
+                        >
+                    ngSPA w/ UI-Router
+                </text>
+
+            </svg>
+
+    &nbsp;
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12" style="text-align: center">
+            An AngularJS Starter Template Shamelessly Mashed Together From the <a href="CodeDrops">Angular-Seed Project</a> ,
+            <a href="https://scotch.io/">Scotch.IO</a> , & <a href="http://tympanus.net/codrops/2015/02/16/create-animated-text-fills/">
+            CodDrops</a>.<br />
+            <a href="http://getbootstrap.com/">Bootstrap</a>, <a href="http://fortawesome.github.io/Font-Awesome/cheatsheet/">
+            Font-Awesome</a>, <a href="http://angular-ui.github.io/bootstrap/">Angular-Bootstrap</a>,
+            & <a href="https://docs.angularjs.org/api/ngAnimate">ngAnimate</a> Have Also Been Included For Your Geeky Pleasure.
+            <br />Please Use, Share, & Improve This Project.<br />
+            <h3>HACK THE PLANET, OPEN SOURCE THE UNIVERSE!!!</h3>
+            <p>Now With :</p>
+            <a ui-sref=".nest" class="btn btn-default">Nested Views</a>
+            <a ui-sref=".fire" class="btn btn-default">More Fire</a>
+        </div>
+    </div>
+    <div ui-view></div>
+</div>

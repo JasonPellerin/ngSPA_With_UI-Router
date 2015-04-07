@@ -1,0 +1,16 @@
+{
+  "name": "ngSPA_BoilerPlate",
+  "description": "A starter project for AngularJS stolen mostly from Angular-Seed Project and Scotch.io",
+  "version": "0.0.0",
+  "homepage": "https://github.com/JasonPellerin/ngSPA_BoilerPlate",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "angular": "1.2.x",
+    "angular-route": "1.2.x",
+    "angular-loader": "1.2.x",
+    "angular-mocks": "~1.2.x",
+    "html5-boilerplate": "~4.3.0",
+    "angular-bootstrap": "0.12.1"
+  }
+}

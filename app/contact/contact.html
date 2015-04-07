@@ -1,0 +1,69 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-12 flame">
+
+
+            <svg viewBox="0 0 600 300">
+
+                <!-- Pattern -->
+                <pattern
+                        id="p-fire"
+                        viewBox="30 100 186 200"
+                        patternUnits="userSpaceOnUse"
+                        width="216" height="200"
+                        x="-70" y="35">
+
+                    <!-- Fire -->
+                    <image xlink:href="http://tympanus.net/codrops-playground/assets/images/posts/23145/fire.gif" width="256" height="300"/>
+                </pattern>
+
+                <!-- Text -->
+                <text text-anchor="middle"
+                      x="50%"
+                      y="50%"
+                      dy=".35em"
+                      class="text"
+                        >
+                    Contact Page
+                </text>
+
+            </svg>
+
+            &nbsp;
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-8 col-sm-offset-2">
+
+            <div id="form-container">
+
+                <div class="page-header text-center">
+                    <h2>Get In Touch</h2>
+
+                    <!-- the links to our nested states using relative paths -->
+                    <!-- add the active class if the state matches our ui-sref -->
+                    <div id="status-buttons" class="text-center">
+                        <a ui-sref-active="active" ui-sref=".profile"><span>1</span> Profile</a>
+                        <a ui-sref-active="active" ui-sref=".interests"><span>2</span> Interests</a>
+                        <a ui-sref-active="active" ui-sref=".payment"><span>3</span> Payment</a>
+                    </div>
+                </div>
+
+                <!-- use ng-submit to catch the form submission and use our Angular function -->
+                <form id="signup-form" ng-submit="processForm()">
+
+                    <!-- our nested state views will be injected here -->
+                    <div id="form-views" class="view-animation" ui-view></div>
+                </form>
+
+            </div>
+
+            <!-- show our formData as it is being typed
+    <pre>
+        {{ formData }}
+    </pre>-->
+
+
+        </div>
+    </div>
+</div>
